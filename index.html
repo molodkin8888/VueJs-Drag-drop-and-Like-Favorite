@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>pagination</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="app">
+  <div id="photo">
+    <item v-for="photo in photos" v-bind:item_data="photo"></item>
+  </div>
+  <div id="cart">
+    <div id="head">
+      <h3>Favorites</h3>
+    </div>
+    <addphoto v-for="addphoto in addphotos" v-bind:add_picture="addphoto"></addphoto>
+  </div>
+</div>
+
+<template id="photo-box">
+
+  <div class="box"> 
+    <img :src="item_data.img"/> 
+     <div id="like">
+       <simple-counter></simple-counter>
+    </div>
+    <i v-on:click="addItem(item_data)">myFavorites</i>
+  </div>
+</template>
+
+<template id="addphoto-box">
+  <div class="row">
+    <div id="section" ondragenter="dragEnter(event)" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+    <img :src="add_picture.img"  id="img1" draggable="true" ondragstart="dragStart(event)"/>
+    <div class="del" v-on:click="removeItem(add_picture)">Remove</div>
+  </div>
+</div>
+</template>
+<div id="box" ondragenter="dragEnter(event)" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+  <p>Drag photo in this place</p>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+  <script src="https://unpkg.com/vue-ls@2.3.3/dist/vue-ls.min.js"></script>
+  <script src="main.js"></script>
+  <script src="dragDrop.js"></script>
+</body>
+</html>

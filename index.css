@@ -1,0 +1,123 @@
+body{
+  background-color: #f8f9db;
+}
+
+#app {
+  width: 920px;
+  margin: 20px auto;
+}
+#app #photo .box {
+  width: 285px;
+  display: inline-block;
+  margin: 0 10px;
+}
+#app #photo .box img {
+  width: 280px;
+  height: 180px;
+  margin: 5px;
+}
+#app #photo .box i {
+    width: 85px;
+    height: 30px;
+    background: #2047e5;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    float: right;
+    margin-bottom: 25px;
+    margin-top: -25px;
+}
+
+button {
+  background-color: red;
+  color: #fff;
+}
+
+#app #photo .box i:hover {
+  transform: scale(1.05);
+}
+
+#app #photo .box p {
+  margin-left: 20px;
+}
+#app #cart {
+  margin-top: 50px;
+  overflow: hidden;
+}
+#app #cart #head {
+  width: 100%;
+  border-bottom: 1px solid #bfbfbf;
+  height: 40px;
+  display: block;
+}
+
+#app #cart .row {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  display: block;
+  flaot: left;
+}
+#app #cart .row img {
+  height: 100px;
+  float: left;
+}
+#app #cart .row h4 {
+  float: left;
+  margin: 0;
+  line-height: 50px;
+  margin-left: 20px;
+  width: 100px;
+}
+#app #cart .row p {
+  float: left;
+  margin: 0;
+  width: 80px;
+  line-height: 100px;
+  margin-left: 35px;
+  text-align: center;
+}
+#app #cart .row .del {
+  float: left;
+  width: 20px;
+  line-height: 100px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #444444;
+}
+
+#app #cart h5 {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+#section
+{
+  width: 300px; /* ширина блока*/
+  height: auto;
+  float: left;
+  margin:5px 0; /* отступы от блока*/
+  padding:5px; /* отступы внутри блока*/
+  border: 0.5px dotted black; /* рамка блока*/
+}
+
+img{
+  width: 220px;
+  height: auto;
+}
+
+#box {
+width: 300px; /* ширина блока*/
+height: auto; /* высота блока*/
+border: 1px dotted black; /* рамка блока*/
+background-color: #91f9ff; /* фон блока*/
+padding:5px; /* отступы внутри блока*/
+float: right;
+}
+
+p{
+  text-align: center;
+} 
